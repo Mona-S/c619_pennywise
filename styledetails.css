@@ -1,0 +1,83 @@
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+}
+.home{
+    float:left;
+    font-size: 40px;
+}
+.container{
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.totalAmount{
+    text-align: center;
+    color: blue;
+    font-size: 60px;
+    display: inline-block;
+}
+.remainingDays{
+    text-align: right;
+    color: blue;
+    font-size: 60px;
+    display: inline-block;
+}
+.item{
+    padding: 50px;
+    background-color: lightblue;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+.button{
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+.addButton {
+  background-color: lightblue;
+  width: 150px;
+  height: 100px;
+  padding: 50px;
+}
+.subtractButton {
+    width: 150px;
+    height: 100px;
+    padding: 50px;
+    background-color: red;
+}
+progress {
+  background-color: green;
+  border-radius: 2px;
+  height: 40px;
+  width: 800px;
+}
+input{
+  font-size: 50px;
+}
+
+.date {
+    display: inline-block;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.amount {
+    display: inline-block;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.transaction {
+    font-size:50px;
+    text-align: center;
+}

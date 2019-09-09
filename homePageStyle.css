@@ -1,0 +1,74 @@
+header{
+  background-color:  rgb(78, 175, 240);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.amountPerDay {
+  float: left;
+  margin-left: 2rem;
+
+
+}
+
+.amountPerWeek {
+  float: right;
+  margin-right: 2rem;
+
+}
+
+.amountPerDay, .amountPerWeek {
+  color: rgb(78, 175, 240);
+  margin-top: 2rem;
+  font-weight: 900;
+
+}
+
+.perDay {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.perWeek {
+  margin-top: 0;
+  margin-right: 1.5rem;
+}
+
+.newGoalCard {
+  margin-top: 5rem;
+  color: rgb(78, 175, 240);
+  border: 1px solid rgb(78, 175, 240);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.tripCard {
+  background-color: rgb(78, 175, 240);
+}
+
+.macbookCard, .suitCard, .tripCard, .inactiveCard {
+  margin-top: 2rem;
+  border: 1px solid;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+
+}
+.macbookCard{
+  background-color: rgb(199, 51, 167)
+}
+
+.suitCard {
+  background-color: rgba(230, 156, 20, 0.856);
+}
+
+.inactiveCard {
+  background-color: gray;
+}
+
+.goalPerDay {
+  position: absolute;
+
+  right: 20px;
+}
