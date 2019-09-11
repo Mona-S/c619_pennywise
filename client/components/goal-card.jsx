@@ -5,8 +5,8 @@ export default function GoalCard(props) {
     <React.Fragment>
       <div className="container">
 
-        <div className={`goal-card ${props.colorClass} `}>
-          <span className="gc-title">{props.name}</span>
+        <div className={`goal-card ${props.color} `}>
+          <span className="goal-card-title">{props.name}</span>
           <span className="daily-goal">{props.dailyGoal}</span>
         </div>
 

@@ -23,6 +23,10 @@
   src: url('./fonts/PublicaPlay-Light.ttf') format("truetype");
 }
 
+body {
+margin: 0;
+}
+
 .header {
   position            : relative;
   background-color    : #28a4b6;
@@ -41,7 +45,7 @@
   color               :#ffffff;
 }
 
-.hdr-title {
+.header-title {
   top                 : 43px;
   position            : relative;
   font-family         : "PublicaPlay-BoldItalic", Helvetica, Arial, serif;
@@ -82,7 +86,7 @@
 }
 
 
-.gc-title {
+.goal-card-title {
   margin: auto;
 }
 

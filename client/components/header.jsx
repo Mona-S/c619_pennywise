@@ -6,7 +6,7 @@ export default function Header(props) {
 
       <nav className="header">
         <img className="home-button" src="/assets/home.png" alt="home button"></img>
-        <span className="hdr-title">PennyWise</span>
+        <span className="header-title">PennyWise</span>
       </nav>
 
     </React.Fragment>
