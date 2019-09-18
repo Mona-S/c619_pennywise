@@ -28,9 +28,17 @@ export function inDollars(value) {
   }).format(value / 100);
 }
 
+export function getTotalSavings(transactionHistory) {
+  var total = 0;
+  for (var i = 0; i < transactionHistory.length; i++) {
+    total += Number(transactionHistory[i].transaction_amount);
+  }
+  return total;
+}
+
 export function dailyGoal(goal) {
   var daysLeft = differenceInDays(goal);
-  var amountLeftToSave = goal.savings_target - goal.current_savings;
+  var amountLeftToSave = goal.savings_target - getTotalSavings(goal.transaction_history);
   var dailyGoalVar = amountLeftToSave / daysLeft;
   return (dailyGoalVar);
 

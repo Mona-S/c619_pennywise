@@ -34,10 +34,11 @@ if( !$result ){
 }
 
 $output = [];
+$goals = [];
 while ( $row = mysqli_fetch_assoc( $result ) ) {
   $goal_id = $row['goal_id'];
-  if ( !isset( $output[0])) {
-    $output[] = [
+  if ( !isset( $goals[$goal_id])) {
+    $goals[$goal_id] = [
       "goal_id" => $row["goal_id"],
       "goal_name" => $row["goal_name"],
       "savings_target" => $row["savings_target"],
@@ -54,10 +55,15 @@ while ( $row = mysqli_fetch_assoc( $result ) ) {
     $row["goal_start_date"], $row["goal_completion_date"],
     $row["goal_achieved_date"], $row["current_savings"], $row["is_completed"]
   );
-  $output[0]["transaction_history"][] = $row;
+  $goals[$goal_id]["transaction_history"][] = $row;
 }
 
-$output = $output[0];
+foreach($goals as $k=>$v){
+  $output[] = $v;
+}
 
+if (count($output) === 1) {
+  $output = $output[0];
+}
 print(json_encode( $output ));
 ?>
