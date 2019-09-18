@@ -54,7 +54,7 @@ export default class GoalDetails extends React.Component {
     return (
       <div className="progress-bar">
         <div className="bar-background">
-          <div className="bar-green" style={styling}>
+          <div className="bar-green" style={styling} >
 
           </div>
         </div>
@@ -64,9 +64,13 @@ export default class GoalDetails extends React.Component {
 
   newDailyGoal() {
     return (
-      <div className="dailyGoal">
-        {inDollars(dailyGoal(this.state))}
+      <div>
+        <div className="dailyGoal">
+          {inDollars(dailyGoal(this.state))}
+
+        </div>
         <div className="Day"> /day </div>
+
       </div>
     );
   }
@@ -139,6 +143,7 @@ export default class GoalDetails extends React.Component {
         <form>
           <div className="add-or-remove-funds">
             <input
+              className="goalDetailsInput"
               type="text"
               name="amount_changed"
               value={this.state.amount_changed}
@@ -180,7 +185,7 @@ export default class GoalDetails extends React.Component {
 
   getDaysRemaining() {
     return (
-      <div className="daysRemaining">{differenceInDays(this.state)} days</div>
+      <div className="daysRemaining">{differenceInDays(this.state)} <span className="Days"> days </span></div>
     );
   }
 
@@ -215,7 +220,7 @@ export default class GoalDetails extends React.Component {
       <React.Fragment>
         <div className="Date">Date</div>
         <div className="Amount">Amount</div>
-        <div className="Line"></div>
+        <div className="Line2"></div>
       </React.Fragment>
     );
   }

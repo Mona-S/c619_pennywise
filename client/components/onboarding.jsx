@@ -10,8 +10,8 @@ function Onboarding(props) {
 
         <p className="getStartedNow">Get Started Now</p>
 
-        <button className="getStartedButton"
-          onClick={() => props.setView('creategoal', {})}> <p>Get Started</p> </button>
+        <div className="getStartedButton"
+          onClick={() => props.setView('creategoal', {})}> <p>Get Started</p> </div>
       </div>
     </React.Fragment>
   );

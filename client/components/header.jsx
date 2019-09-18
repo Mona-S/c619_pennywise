@@ -5,7 +5,8 @@ export default function Header(props) {
 
     <React.Fragment>
       <nav className="header">
-        <img className="home-button" src="/assets/home.png" alt="home button"></img>
+        <img className="home-button"
+          onClick={() => props.setView('home', {})} src="/assets/home.png" alt="home button"></img>
         <span className="header-title">PennyWise</span>
       </nav>
 

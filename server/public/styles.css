@@ -89,13 +89,15 @@ body {
 }
 
 .goal-card{
-  display             : flex;
-  position            : relative;
-  margin:             : auto;
-  top:                : 34px;
-  bottom:             : 34px;
-  width               : 327px;
-  height              : 152px;
+  display: flex;
+  position: relative;
+  /* margin: auto; */
+  left: 38px;
+  /* text-align: center; */
+  top: 54px;
+  bottom: 34px;
+  width: 327px;
+  height: 152px;
   font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
   font-size           : 36.0px;
   color               : #ffffff;
@@ -119,7 +121,7 @@ body {
 
 
 .goal-card-title {
-  margin: auto;
+  margin: 20px;
 }
 
 .daily-goal {
@@ -140,9 +142,9 @@ body {
 }
 
 .-toward-6000 {
-  margin-left: 25px;
+  margin-left: 77px;
   width: 261px;
-  height: 20px;
+  height: 28px;
  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: normal;
@@ -155,25 +157,28 @@ body {
 
 
 .daysRemaining {
+  margin-left: 80px;
+  text-align: center;
+  padding: 20px;
   width: 188px;
   height: 44px;
-  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  font-size: 38px;
+  font-family: "PublicaPlay-RegularItalic", Helvetica, Arial, serif;
+  font-size: 44px;
   font-weight: normal;
   font-style: italic;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: right;
+  /* text-align: right; */
   color: #2cc0c8;
 }
 
 
 .Days {
   width: 174px;
-  height: 18px;
+  height: px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: normal;
   font-style: italic;
   font-stretch: normal;
@@ -222,10 +227,11 @@ body {
 }
 
 .progress-bar {
-
-  margin-left: 12px;
+  margin: 10px 12px -4px 14px;
+  /* margin-left: 12px;
   margin-right: 12px;
   margin-top: 10px;
+  margin-bottom: 1px; */
   height: 30px;
 }
 
@@ -247,9 +253,11 @@ body {
 .add-or-remove-funds {
 
   width: 375px;
-  height: 24px;
+  height: 40px;
+  margin-top: 76px;
+  margin-bottom: -67px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  font-size: 22.0px;
+  font-size: 30.0px;
   font-weight: 200;
   font-style: normal;
   font-stretch: normal;
@@ -260,13 +268,16 @@ body {
 }
 
 .Line {
+   margin-left: 35px;
   width: 327px;
   height: 2px;
   background-color: #e0e0e0;
 }
 
 .Line2 {
-  width: 179px;
+  margin-left: 35px;
+  margin-top: -8px;
+  width: 338px;
   height: 2px;
   background-color: #e0e0e0;
 }
@@ -292,10 +303,11 @@ body {
 }
 
 .Transaction-History, .getTransAmount {
+  margin-top: 25px;
   width: 375px;
-  height: 24px;
+  height: 40px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  font-size: 22.0px;
+  font-size: 27.0px;
   font-weight: 200;
   font-style: normal;
   font-stretch: normal;
@@ -375,8 +387,20 @@ input[type=text],input[type=number]{
   text-align: center;
 }
 
+.goalDetailsInput {
+  background: transparent;
+  width: 317px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  font-size:20px;
+}
+
 .Date, .Amount {
   display: inline-block;
+  margin-top: 22px;
+  margin-bottom: -15px;
+  margin-left: 14px;
   width: 163px;
   height: 50px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
@@ -388,4 +412,41 @@ input[type=text],input[type=number]{
   letter-spacing: normal;
   text-align: center;
   color: #a9a9a9;
+}
+
+
+ .transactionInputDate {
+   margin-top: 10px;
+  width: 164px;
+  height: 64px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+ .transactionInputAmount {
+  width: 120px;
+  height: 64px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #2cc0c8;
+}
+
+.transactionInputDate, .transactionInputAmount {
+  padding: 43px;
+  /* padding-top: 10px; */
+  /* margin-top: 10px; */
+  margin-bottom: 12px;
 }

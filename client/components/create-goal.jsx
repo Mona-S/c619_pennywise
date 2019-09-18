@@ -47,13 +47,13 @@ export default class CreateGoal extends React.Component {
           <div className="form-group">
             <label className="secondStatement">How much does it cost?</label>
             <br></br>
-            <input type="text" name="savings_target" value={this.state.savings_target} onChange={this.handleChange} id="savings_target" className="form-control" placeholder="100" />
+            <input type="text" pattern="\d+" title="please enter numbers only" name="savings_target" value={this.state.savings_target} onChange={this.handleChange} id="savings_target" className="form-control" placeholder="100" />
           </div>
 
           <div className="form-group">
             <label className="secondStatement">How much are you starting with?</label>
             <br></br>
-            <input type="text" name="current_savings" value={this.state.current_savings} onChange={this.handleChange} id="current_savings" className="form-control" placeholder="10" />
+            <input type="text" pattern="\d+" title="please enter numbers only" name="current_savings" value={this.state.current_savings} onChange={this.handleChange} id="current_savings" className="form-control" placeholder="10" />
           </div>
 
           <div className="form-group">

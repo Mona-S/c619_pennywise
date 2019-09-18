@@ -65,7 +65,8 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
 
-        <Header />
+        <Header
+          setView={this.setView}/>
 
         {this.renderView()}
       </React.Fragment>

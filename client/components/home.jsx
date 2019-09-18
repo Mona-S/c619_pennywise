@@ -51,7 +51,6 @@ export default class Home extends React.Component {
           savingsTarget={goalData.savings_target}
           currentSavings={goalData.current_savings}
           dailyGoal={inDollars(dailyGoal(goalData))}
-          isCompleted={goalData.isCompleted}
           color={this.colors[index % this.colors.length]}
           setView={this.props.setView}
         />
@@ -84,9 +83,6 @@ export default class Home extends React.Component {
 
         {this.generateCards()}
 
-        <div className={`goal-card gray`}>
-          <span className="goal-card-title">Completed</span>
-        </div>
       </React.Fragment>
     );
   }
