@@ -24,7 +24,7 @@
 }
 body {
   margin: 0;
-  display: flexbox;
+  display: flex;
   align-content: center;
   /* align-items: center; */
 }
@@ -34,20 +34,20 @@ body {
   position            : relative;
   background-color    : #28a4b6;
   top                 : 0px;
-  height              : 110px;
+  height              : 75px;
   width               : 100vw;
   text-align          : center;
 }
 
 .home-button {
-  top                 : 43px;
+  top                 : 22px;
   position            : absolute;
   left                : 30px;
   color               :#ffffff;
 }
 
 .header-title {
-  top                 : 43px;
+  top                 : 22px;
   position            : relative;
   font-family         : "PublicaPlay-BoldItalic", Helvetica, Arial, serif;
   font-size           : 36px;
