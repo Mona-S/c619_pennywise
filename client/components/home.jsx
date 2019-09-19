@@ -1,6 +1,6 @@
 import React from 'react';
 import GoalCard from './goal-card';
-import { dailyGoal, weeklyGoal, inDollars } from './helper.js';
+import { dailyGoal, inDollars } from './helper.js';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -32,12 +32,14 @@ export default class Home extends React.Component {
     return dailyGoalsArray.reduce((a, b) => a + b, 0);
   }
 
-  weeklyGoalsTotal(i) {
-    var weeklyGoalsArray = [];
-    for (i in this.state.goals) {
-      weeklyGoalsArray.push(weeklyGoal(this.state.goals[i]));
-    }
-    return weeklyGoalsArray.reduce((a, b) => a + b, 0);
+  weeklyGoalsTotal() {
+    return (this.dailyGoalsTotal() * 7);
+
+    // var weeklyGoalsArray = [];
+    // for (i in this.state.goals) {
+    //   weeklyGoalsArray.push(inDollars(weeklyGoal(this.state.goals[i])));
+    // } console.log('weeklyGoalsArray', weeklyGoalsArray);
+    // return weeklyGoalsArray.reduce((a, b) => a + b, 0);
   }
 
   generateCards() {

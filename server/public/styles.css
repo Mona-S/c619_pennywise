@@ -73,9 +73,7 @@ body {
   width: 327px;
   height: 80px;
   border: solid 2px #2cc0c8;
-  font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  font-size: 36px;
-  line-height         : 43.0px;
+
   letter-spacing: normal;
   text-align: center;
   color: #2cc0c8;
@@ -84,8 +82,9 @@ body {
 }
 
 .new-goal-text {
-  align-self: center;
-  color: #2cc0c8;
+  font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 36px;
+  line-height         : 80px;
 }
 
 .goal-card{
