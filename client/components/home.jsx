@@ -65,15 +65,28 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-
-        {
-          <div className="container">
-            <div>{inDollars(this.dailyGoalsTotal())}</div>
-
-            <div>{inDollars(this.weeklyGoalsTotal())}</div>
+      <React.Fragment><div className="card-container">
+        <div className="goals-row">
+          <div className="goals-total-container">
+            <div className="daily-goals-total">
+              <div className="daily-goals-text-justify">
+                <span className="daily-totals-text">{inDollars(this.dailyGoalsTotal())}</span><br />
+                <span className="per-day-text">/day</span>
+              </div>
+            </div>
           </div>
-        }
+
+          <div className="goals-total-container">
+            <div className="daily-goals-total">
+              <div className="weekly-goals-text-justify">
+                <span className="daily-totals-text">{inDollars(this.weeklyGoalsTotal())}</span><br />
+                <span className="per-day-text">/day</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         <div
           className="new-goal-button"
           onClick={props =>
@@ -82,6 +95,7 @@ export default class Home extends React.Component {
         </div>
 
         {this.generateCards()}
+      </div>
 
       </React.Fragment>
     );

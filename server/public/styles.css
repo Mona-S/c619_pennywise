@@ -24,9 +24,12 @@
 }
 body {
   margin: 0;
-  display: flex;
-  align-content: center;
+  /* display: flex;
+  align-content: center; */
   /* align-items: center; */
+    display: flex;
+  /* flex-direction: column; */
+  align-items: center;
 }
 
 
@@ -59,16 +62,108 @@ body {
   align-items: center;
 }
 
-.daily-goals-total {
-    align-self: center;
+
+.goals-row {
+  position: relative;
+  width:100vw;
+  display: inline-flex;
+  margin-top: 42px;
+  margin-bottom: 26px;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* margin-left: 24px;
+  margin-right: 24px; */
+
+
 }
 
-.weekly-goals-total {
-    align-self: center;
+.goals-total-container {
+    /* position: relative; */
+    /* align-items: center; */
+
+  width: 50vw;
+        /* justify-content: space-between; */
+    /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
 }
+
+
+
+.daily-goals-total, .weekly-goals-total {
+    /* align-self: center; */
+      /* position: relative; */
+
+
+  /* align-items: center; */
+    /* align-items: right; */
+      /* justify-content: space-between; */
+    /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+}
+
+.daily-goals-text-justify, .weekly-goals-text-justify {
+  font-family         : "PublicaPlay-Light", Helvetica, Arial, serif;
+  font-size           : 34.0px;
+  color               : #2cc0c8;
+  text-align          : right;
+  line-height         : 33.0px;
+}
+
+
+/* .daily-goals-text-justify {
+padding-left:20px;
+
+padding-right:20px;
+}
+
+.weekly-goals-text-justify {
+
+padding-left:20px; */
+
+}
+
+
+
+.daily-totals-text, .weekly-goals-text {
+    /* text-align: right; */
+
+}
+
+
+.daily-totals-text {
+
+}
+
+.weekly-goals-text {
+}
+
+       /* padding-left: 20px; */
+
+
+
+
+.per-day-text, .per-week-text {
+
+padding-left:20px;
+
+    /* top: 33px; */
+
+    /* position: absolute; */
+    margin: auto;
+
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 24.0px;
+    color: #2cc0c8;
+    text-align: right;
+    line-height: 29.0px;
+
+}
+
+
 
 .new-goal-button {
-    display: flex;
+  /* display: flex; */
 
   width: 327px;
   height: 80px;
@@ -87,12 +182,18 @@ body {
   line-height         : 80px;
 }
 
-.goal-card{
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goal-card {
   display             : flex;
   position            : relative;
-  margin:             : auto;
-  top:                : 34px;
-  bottom:             : 34px;
+  /* margin:             : 24; */
+  margin-top                : 24px;
+  margin-bottom             : 24px;
   width               : 327px;
   height              : 152px;
   font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
