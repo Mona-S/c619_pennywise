@@ -44,7 +44,7 @@ export default class CreateGoal extends React.Component {
             <label className="formQuestion">What are you saving for ?</label>
             <br></br>
 
-            <input type="text" name="goal_name" value={this.state.goal_name} pattern="[A-Za-z0-9]+" onChange={this.handleChange} id="goal_name" className="form-control" placeholder="Example : Computer" />
+            <input type="text" name="goal_name" value={this.state.goal_name} pattern="[A-Za-z0-9]+" onChange={this.handleChange} id="goal_name" className="form-control" placeholder="Goal: Computer" />
 
           </div>
 
@@ -52,7 +52,7 @@ export default class CreateGoal extends React.Component {
             <label className="formQuestion">How much does it cost?</label>
             <br></br>
 
-            <input type="text" title="please enter numbers only" pattern="^[0-9]+(\.[0-9]{1,2})?" name="savings_target" value={this.state.savings_target} onChange={this.handleChange} id="savings_target" className="form-control" placeholder="100" />
+            <input type="text" title="please enter numbers only" pattern="^[0-9]+(\.[0-9]{1,2})?" name="savings_target" value={this.state.savings_target} onChange={this.handleChange} id="savings_target" className="form-control" placeholder="please enter amount in $" />
 
           </div>
 
@@ -60,7 +60,7 @@ export default class CreateGoal extends React.Component {
             <label className="formQuestion">How much are you starting with?</label>
             <br></br>
 
-            <input type="text" title="please enter numbers only" pattern="^[0-9]+(\.[0-9]{1,2})?" name="current_savings" value={this.state.current_savings} onChange={this.handleChange} id="current_savings" className="form-control" placeholder="10" />
+            <input type="text" title="please enter numbers only" pattern="^[0-9]+(\.[0-9]{1,2})?" name="current_savings" value={this.state.current_savings} onChange={this.handleChange} id="current_savings" className="form-control" placeholder="please enter amount in $" />
 
           </div>
 
