@@ -46,7 +46,7 @@ export default class GoalDetails extends React.Component {
 
   getDaysRemaining() {
     return (
-      <div>
+      <div className="days-row">
         <span className="days-number">{differenceInDays(this.state)}</span>
         <span className="days-left-text"> days left </span>
       </div>

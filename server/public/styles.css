@@ -173,7 +173,7 @@ body {
 
 
 .days-number {
-  text-align: right;
+  /* text-align: right; */
   height: 44px;
   font-family: "PublicaPlay-RegularItalic", Helvetica, Arial, serif;
   font-size: 44px;
@@ -182,7 +182,6 @@ body {
   /* font-stretch: normal;
   line-height: normal;
   letter-spacing: normal; */
-  /* text-align: right; */
   color: #2cc0c8;
 }
 
@@ -196,6 +195,24 @@ body {
   font-style: italic;;
   color: #2cc0c8;
 }
+
+
+
+
+
+
+.days-row {
+  position: relative;
+  padding-top: 30px;
+  width:100vw;
+  display: flex;
+  /* margin-top: 134x; */
+  margin-bottom: 34px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
 
 .dailyDays {
   /* display: block;
